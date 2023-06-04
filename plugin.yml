@@ -1,0 +1,89 @@
+name: RtpTpSystem
+
+main: Nep\TPsystem\Main
+
+version: 1
+
+api: 4.0.0
+
+author: Gamerplsy3975
+
+# Modded by vk.com/PHPCube
+
+# added: /tppos, and fixed /rtp detection position Y
+
+
+
+commands:
+
+  tp:
+
+    description: Телепортироваться к игроку
+
+    permission: tp.cmd
+
+  tphere:
+
+    description: Телепортировать игрока к себе
+
+    permission: tphere.cmd
+
+  tpa:
+
+    description: Отправить запрос на телепортацию
+
+    permission: tpa.cmd
+
+  tpaccept:
+
+    description: Принять запрос на телепортацию
+
+    aliases: ["tpc"]
+
+    permission: tpa.cmd
+
+  tpdeny:
+
+    description: Отклонить запрос на телепортацию
+
+    aliases: ["tpd"]
+
+    permission: tpd.cmd
+
+  rtp:
+
+    description: Рандомная телепортация
+
+    permission: rtp.cmd
+
+  tppos:
+
+    description: "Телепорт по координатам"
+
+    permission: "command.tppos"
+
+permissions:
+
+  command.tppos:
+
+    default: op
+
+  tp.cmd:
+
+    default: op
+
+  tphere.cmd:
+
+    default: op
+
+  rtp.cmd:
+
+    default: true
+
+  tpd.cmd:
+
+    default: true
+
+  tpa.cmd:
+
+    default: true
